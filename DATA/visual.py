@@ -7,7 +7,7 @@ st.title('ELIGE TUS COLORES')
 st.header('Proyecto Final: Aprende a maquillarte en función de tu colometría')
 
 combinaciones = pd.read_csv('../DATA/TABLA_BASE/combinaciones_final_csv.csv')
-recomendaciones = pd.read_csv('../DATA/TABLA_RECOMENDACIONES/prod_recomendados_csv.csv')
+recomendaciones = pd.read_csv('../DATA/TABLA_RECOMENDACIONES/recomendaciones_csv.csv')
 
 
 cabello, croma_cab = st.columns(2)
@@ -41,19 +41,9 @@ resultado = combinaciones[(combinaciones.CABELLO == cabello) &
               (combinaciones.CROMA_OJOS == croma_ojo) &
               (combinaciones.CROMA_PIEL == croma_piel) &
               combinaciones.PALETAS]
-
-#Para quitar el indice de la tabla 
-hide_dataframe_row_index = """
-            <style>
-            .row_heading.level0 {display:none}
-            .blank {display:none}
-            </style>
-            """      
-
-st.markdown(hide_dataframe_row_index, unsafe_allow_html=True)
-
+              
 if st.button('Calcular paleta'):
-    var = resultado.PALETAS[0]
+    
+    var = resultado.PALETAS.values[0]
     st.header(var)
     st.dataframe(recomendaciones[recomendaciones['PALETA'].str.contains(var)][['NOMBRE', 'PRODUCTO', 'TIENDA', 'LINK', 'PRECIO (€)']])
-    #nuevo = st.slider('hola', 0,200,0)
