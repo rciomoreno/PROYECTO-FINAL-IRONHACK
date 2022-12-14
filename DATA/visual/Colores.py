@@ -12,7 +12,7 @@ st.set_page_config(page_title='PALETA', page_icon="https://a.slack-edge.com/prod
 badge(type="github", name="rciomoreno")
 
 
-#add_logo("https://cdn-icons-png.flaticon.com/512/6491/6491243.png")
+#add_logo("https://i.pinimg.com/564x/23/a5/30/23a530ba13cb1315b8be79501dcfbef8.jpg")
 
 
 colored_header(
