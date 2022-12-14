@@ -7,12 +7,13 @@ from streamlit_extras.app_logo import add_logo
 from streamlit_extras.badges import badge
 
 
-st.set_page_config(layout='wide')
+st.set_page_config(page_title='PALETA', page_icon="https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/1f484@2x.png", layout="wide", initial_sidebar_state="auto", menu_items=None)
 
 badge(type="github", name="rciomoreno")
 
 
 #add_logo("https://cdn-icons-png.flaticon.com/512/6491/6491243.png")
+
 
 colored_header(
     label='    ',
@@ -24,8 +25,8 @@ st.markdown("<h1 style='text-align: center; color: white;'>MAQUÍLLATE SEGÚN TU
 card(
     title='ELIGE TUS COLORES',
     text='¡Lo más parecido posible!',
-    image='https://data.whicdn.com/images/222110080/original.jpg',
-    url='https://www.google.com', #poner Tableau 
+    image='https://data.whicdn.com/images/332265316/original.jpg',
+    url='', #poner Tableau 
 )
 
 
@@ -43,19 +44,19 @@ with cabello:
     cabello = st.selectbox('Elige tu color de cabello', combinaciones.CABELLO.unique())
 
 with croma_cab:
-    croma_cab = st.radio('1 color de cabello (brillante) o más de 1 color (suave)', combinaciones.CROMA_CAB.unique())
+    croma_cab = st.radio('Un color de cabello (brillante) o más de 1 color (suave)', combinaciones.CROMA_CAB.unique())
 
 with ojos:
     ojos = st.selectbox('Elige tu color de ojos', combinaciones.OJOS.unique())
 
 with croma_ojo:
-    croma_ojo = st.radio('1 solo color de ojos (brillante) o más de 1 color (suave)', combinaciones.CROMA_OJOS.unique())
+    croma_ojo = st.radio('Un color de ojos (brillante) o más de 1 color (suave)', combinaciones.CROMA_OJOS.unique())
 
 with piel:
     piel = st.selectbox('Elige tu color de piel', combinaciones.PIEL.unique())
 
 with croma_piel:
-    croma_piel = st.radio('1 solo color de piel (brillante) o más de 1 color (suave)', combinaciones.CROMA_PIEL.unique())
+    croma_piel = st.radio('Un color de piel (brillante) o más de 1 color (suave)', combinaciones.CROMA_PIEL.unique())
 
 
 

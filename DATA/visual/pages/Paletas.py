@@ -26,8 +26,8 @@ var = res.PALETAS.values[0]
 card(
     title = var,
     text = '  ',
-    image = 'https://data.whicdn.com/images/222110080/original.jpg',
-    url = 'https://www.google.com', #poner Tableau 
+    image = 'https://data.whicdn.com/images/332265316/original.jpg',
+    url = ' ', #poner Tableau 
 )
 var2 = reco[reco['PALETA'].str.contains(var)][['NOMBRE', 'PRODUCTO', 'TIENDA', 'LINK', 'PRECIO (€)']]
 valor = st.slider('Elige un rango de precio', var2['PRECIO (€)'].min(),  var2['PRECIO (€)'].max())
