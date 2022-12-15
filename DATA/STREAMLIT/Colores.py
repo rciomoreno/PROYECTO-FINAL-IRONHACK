@@ -5,11 +5,16 @@ from streamlit_card import card
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.app_logo import add_logo
 from streamlit_extras.badges import badge
+from streamlit_extras.stoggle import stoggle
 
 
-st.set_page_config(page_title='PALETA', page_icon="https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/1f484@2x.png", layout="wide", initial_sidebar_state="auto", menu_items=None)
+
+st.set_page_config(page_title='Colores', page_icon="https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/1f484@2x.png", layout="wide", initial_sidebar_state="auto", menu_items=None)
+
+stoggle('¡Sígueme!', ' ' )
 
 badge(type="github", name="rciomoreno")
+badge(type="twitter", name="rciomoreno")
 
 
 #add_logo("https://i.pinimg.com/564x/23/a5/30/23a530ba13cb1315b8be79501dcfbef8.jpg")
@@ -32,8 +37,8 @@ card(
 
 
 
-combinaciones = pd.read_csv('../visual/combinaciones_final_csv.csv')
-recomendaciones = pd.read_csv('../visual/recomendaciones_csv.v2.csv')
+combinaciones = pd.read_csv('../STREAMLIT/combinaciones_final.csv')
+recomendaciones = pd.read_csv('../STREAMLIT/recomendaciones_csv.v2.csv')
 
 
 cabello, croma_cab = st.columns(2)
