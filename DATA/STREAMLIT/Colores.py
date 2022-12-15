@@ -16,22 +16,18 @@ stoggle('¡Sígueme!', ' ' )
 badge(type="github", name="rciomoreno")
 badge(type="twitter", name="rciomoreno")
 
-
-#add_logo("https://i.pinimg.com/564x/23/a5/30/23a530ba13cb1315b8be79501dcfbef8.jpg")
-
-
 colored_header(
     label='    ',
     description = '     ',
     color_name="red-50",
 )
-st.markdown("<h1 style='text-align: center; color: white;'>MAQUÍLLATE SEGÚN TU COLOMETRÍA FACIAL</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>MAQUÍLLATE SEGÚN TU COLORIMETRÍA FACIAL</h1>", unsafe_allow_html=True)
 
 card(
     title='ELIGE TUS COLORES',
     text='¡Lo más parecido posible!',
     image='https://data.whicdn.com/images/332265316/original.jpg',
-    url='', #poner Tableau 
+    url='https://www.canva.com/design/DAFU04J4k2g/s4uS8QGFfzFdBkiIV5eObg/edit#', #presentación de Canva
 )
 
 
@@ -74,7 +70,7 @@ with croma_piel:
                 combinaciones.PALETAS]
 
 
-resultado.to_csv('../visual/pages/resultados/resultado.csv')
+resultado.to_csv('../STREAMLIT/pages/resultados/resultado.csv')
 
 boton = st.button('Calcular paleta')
 if boton:

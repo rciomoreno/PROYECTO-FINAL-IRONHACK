@@ -38,7 +38,7 @@ card(
         title = var,
         text = '  ',
         image = 'https://data.whicdn.com/images/332265316/original.jpg',
-        url = ' ', #poner Tableau 
+        url = 'https://www.canva.com/design/DAFU04J4k2g/s4uS8QGFfzFdBkiIV5eObg/edit#', #presentación de canva
     )
 
 col1, col2, col3 = st.columns([ 1, 1, 1])
