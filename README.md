@@ -72,6 +72,11 @@
  colores por cámara.
  
  → Incrementar la base de datos de productos recomendados para ofrecer la mayor variedad posible al usuario.
+ 
+ 
+ → Incrementar las opciones de colores de pelo, ojos y piel para que cualquier persona pueda utilizar el programa.
+ 
+ 
 
   
   
